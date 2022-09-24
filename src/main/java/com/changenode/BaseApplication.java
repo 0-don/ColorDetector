@@ -5,20 +5,15 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import java.io.File;
+import java.awt.*;
 import java.io.IOException;
 
 public class BaseApplication extends Application {
 
-    public static File outputFile;
-
-
     public static void main(String[] args) {
-        /*
-         * Route the debugging output for this application to a log file in your "default" directory.
-         * */
+
 //        try {
-//            outputFile = File.createTempFile("debug", ".log", getFileSystemView().getDefaultDirectory());
+//            File outputFile = File.createTempFile("debug", ".log", getFileSystemView().getDefaultDirectory());
 //            PrintStream output = new PrintStream(new BufferedOutputStream(new FileOutputStream(outputFile)), true);
 //            System.setOut(output);
 //            System.setErr(output);
@@ -27,15 +22,25 @@ public class BaseApplication extends Application {
 //        }
 
         launch(args);
+
     }
 
     @Override
-    public void start(Stage stage) throws IOException {
+    public void start(Stage stage) throws IOException, AWTException {
 
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getClassLoader().getResource("view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+        Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Hello!");
         stage.setScene(scene);
         stage.show();
+
+//        Robot robot = new Robot();
+//
+//        while (true) {
+//            Point cord = MouseInfo.getPointerInfo().getLocation();
+//            Color color = robot.getPixelColor((int) cord.getX(), (int) cord.getY());
+//            System.out.println("X: " + cord.getX() + " Y: " + cord.getY() + " Color: " + color);
+//            robot.delay(1000);
+//        }
     }
 }
