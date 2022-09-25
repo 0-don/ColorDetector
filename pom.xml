@@ -119,6 +119,7 @@
                         <configuration>
                             <!-- Include only compile stage dependencies (no test dependencies) -->
                             <includeScope>compile</includeScope>
+                            <includeTypes>dll</includeTypes>
                             <!-- The JavaFX libraries are bundled into the custom JVM, so we don't want to duplicate
                             them in the bundled app and installer. This command skips all of the JavaFX by groupId. -->
                             <excludeGroupIds>org.openjfx</excludeGroupIds>
