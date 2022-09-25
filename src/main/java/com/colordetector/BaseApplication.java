@@ -38,7 +38,7 @@ public class BaseApplication extends Application {
         stage.setTitle("Hello!");
         stage.setScene(scene);
         stage.show();
-        controller.setX("wtf");
+        controller.getX().setText("wtf");
 
 //        Robot robot = new Robot();
 //

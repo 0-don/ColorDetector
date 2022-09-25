@@ -3,7 +3,10 @@ package com.colordetector.controller;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
+import lombok.Getter;
 
+
+@Getter
 public class ColorDetectorController {
     @FXML
     private TextField x;
@@ -29,8 +32,6 @@ public class ColorDetectorController {
     @FXML
     private Pane color;
 
-    public void setX(String text) {
-        x.setText(text);
-    }
+
 }
 

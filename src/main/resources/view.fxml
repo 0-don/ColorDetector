@@ -16,7 +16,7 @@
                 </font>
             </Text>
         </Pane>
-        <Pane id="color" layoutX="12.0" layoutY="18.0" prefHeight="67.0" prefWidth="66.0"
+        <Pane fx:id="color" id="color" layoutX="12.0" layoutY="18.0" prefHeight="67.0" prefWidth="66.0"
               style="-fx-background-color: red; -fx-border-radius: 5px; -fx-border-width: 0.5px; -fx-border-color: white; -fx-background-radius: 5px;"/>
     </Pane>
 
