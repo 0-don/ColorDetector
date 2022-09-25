@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.changenode</groupId>
-    <artifactId>maven-jpackage-template</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <groupId>com.colordetector</groupId>
+    <artifactId>color-detector</artifactId>
+    <version>1.0</version>
 
     <!-- This description text is included in the Windows installer by default, see windows-jpackage.txt -->
-    <description>Sample JavaFX Application</description>
+    <description>Color Detector</description>
 
     <properties>
         <!-- Set this to the class with the main method for your application -->
-        <main-class>com.changenode.BaseApplication</main-class>
+        <main-class>com.colordetector.BaseApplication</main-class>
         <!-- Change your app's name to something interesting... but you might want to avoid spaces
         just to safe for compatibility across operating systems. -->
-        <app.name>TestApp</app.name>
+        <app.name>ColorDetector</app.name>
         <!-- This converts the build timestamp to a Windows-installer friendly version number (minute level resolution).
         Note that Maven generated timestamp is in UTC, not local time. For more information see:
          https://docs.microsoft.com/en-us/windows/win32/msi/productversion
@@ -248,31 +248,6 @@
             </plugins>
         </pluginManagement>
     </build>
-    <reporting>
-        <plugins>
-            <!-- http://mojo.codehaus.org/versions-maven-plugin/version-rules.html -->
-            <!-- This plugin is a utility to find outdated dependencies in your project. Just run mvn site and
-            the resulting HTML reports in target/site will let you know what plugins and dependencies are out of date.
-             -->
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>versions-maven-plugin</artifactId>
-                <version>2.8.1</version>
-                <reportSets>
-                    <reportSet>
-                        <reports>
-                            <report>dependency-updates-report</report>
-                            <report>plugin-updates-report</report>
-                            <report>property-updates-report</report>
-                        </reports>
-                    </reportSet>
-                </reportSets>
-                <configuration>
-                    <processDependencyManagementTransitive>false</processDependencyManagementTransitive>
-                </configuration>
-            </plugin>
-        </plugins>
-    </reporting>
     <profiles>
         <profile>
             <id>github-action</id>

@@ -1,4 +1,3 @@
-
 For reference, here is the complete output from a successful run of the project.
 
 Note that on my (reasonably modern) Windows 10 laptop the line...
@@ -12,7 +11,7 @@ Here is a sample execution of `mvn clean install`
 ``` 
 [INFO] Scanning for projects...
 [INFO] 
-[INFO] ---------------< com.changenode:maven-jpackage-template >---------------
+[INFO] ---------------< com.colordetector:maven-jpackage-template >---------------
 [INFO] Building maven-jpackage-template 1.0-SNAPSHOT
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 

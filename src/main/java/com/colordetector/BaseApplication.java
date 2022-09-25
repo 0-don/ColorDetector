@@ -1,4 +1,4 @@
-package com.changenode;
+package com.colordetector;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
