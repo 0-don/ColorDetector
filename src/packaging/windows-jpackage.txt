@@ -14,3 +14,4 @@
 --win-upgrade-uuid ${windows.upgrade.uuid}
 --description "${project.description}"
 --copyright "(C) ${windows.vendor}"
+--win-per-user-install

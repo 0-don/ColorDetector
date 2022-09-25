@@ -24,6 +24,7 @@
          -->
 
         <app.version>1.0.0</app.version>
+        <app.dir>${user.home}\AppData\Roaming\${app.name}</app.dir>
 
         <!-- This property is used to specify the modules included in the (custom) JVM image. -->
         <!-- Reminder: javafx.web (the embedded browser component) is not included in this project by default due
