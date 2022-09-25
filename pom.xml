@@ -52,12 +52,20 @@
     <dependencies>
         <!-- This dependency is a normal Maven dependency, here mainly as an example. It brings in other transitive
          dependencies as well. You can remove it from your project (unless you happen to need to generate test data.  -->
+
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.24</version>
             <scope>provided</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.github.kwhat/jnativehook -->
+        <dependency>
+            <groupId>com.github.kwhat</groupId>
+            <artifactId>jnativehook</artifactId>
+            <version>2.2.2</version>
         </dependency>
 
     </dependencies>
