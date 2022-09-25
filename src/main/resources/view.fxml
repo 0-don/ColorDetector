@@ -55,7 +55,8 @@
                 <Font size="14.0"/>
             </font>
         </Label>
-        <TextField id="name" alignment="CENTER" editable="false" layoutX="320.0" layoutY="22.0" prefHeight="0.0"
+        <TextField fx:id="name" id="name" alignment="CENTER" editable="false" layoutX="320.0" layoutY="22.0"
+                   prefHeight="0.0"
                    prefWidth="53.0"
                    style="-fx-background-color: #1c1c1c; -fx-text-fill: #ffffff; -fx-border-color: #ffffff; -fx-border-style: solid; -fx-border-width: 0.5px; -fx-border-radius: 5px;"/>
         <Label alignment="CENTER_RIGHT" layoutX="251.0" layoutY="55.0" prefHeight="26.0" prefWidth="66.0"
@@ -64,7 +65,8 @@
                 <Font size="14.0"/>
             </font>
         </Label>
-        <TextField id="hex" alignment="CENTER" editable="false" layoutX="320.0" layoutY="55.0" prefHeight="0.0"
+        <TextField fx:id="hex" id="hex" alignment="CENTER" editable="false" layoutX="320.0" layoutY="55.0"
+                   prefHeight="0.0"
                    prefWidth="53.0"
                    style="-fx-background-color: #1c1c1c; -fx-text-fill: #ffffff; -fx-border-color: #ffffff; -fx-border-style: solid; -fx-border-width: 0.5px; -fx-border-radius: 5px;"/>
     </Pane>
@@ -76,7 +78,8 @@
                 <Font size="14.0"/>
             </font>
         </Label>
-        <TextField id="red" alignment="CENTER" editable="false" layoutX="55.0" layoutY="22.0" prefHeight="0.0"
+        <TextField fx:id="red" id="red" alignment="CENTER" editable="false" layoutX="55.0" layoutY="22.0"
+                   prefHeight="0.0"
                    prefWidth="53.0"
                    style="-fx-background-color: #1c1c1c; -fx-text-fill: #ffffff; -fx-border-color: #ffffff; -fx-border-style: solid; -fx-border-width: 0.5px; -fx-border-radius: 5px;"/>
         <Pane layoutX="21.0" layoutY="-18.0" prefHeight="34.0" prefWidth="102.0" style="-fx-background-color: #252526;">
@@ -93,7 +96,8 @@
                 <Font size="14.0"/>
             </font>
         </Label>
-        <TextField id="green" alignment="CENTER" editable="false" layoutX="55.0" layoutY="55.0" prefHeight="0.0"
+        <TextField fx:id="green" id="green" alignment="CENTER" editable="false" layoutX="55.0" layoutY="55.0"
+                   prefHeight="0.0"
                    prefWidth="53.0"
                    style="-fx-background-color: #1c1c1c; -fx-text-fill: #ffffff; -fx-border-color: #ffffff; -fx-border-style: solid; -fx-border-width: 0.5px; -fx-border-radius: 5px;"/>
         <Label alignment="CENTER_RIGHT" layoutX="9.0" layoutY="88.0" prefHeight="26.0" prefWidth="45.0"
@@ -102,7 +106,8 @@
                 <Font size="14.0"/>
             </font>
         </Label>
-        <TextField id="blue" alignment="CENTER" editable="false" layoutX="55.0" layoutY="88.0" prefHeight="0.0"
+        <TextField fx:id="blue" id="blue" alignment="CENTER" editable="false" layoutX="55.0" layoutY="88.0"
+                   prefHeight="0.0"
                    prefWidth="53.0"
                    style="-fx-background-color: #1c1c1c; -fx-text-fill: #ffffff; -fx-border-color: #ffffff; -fx-border-style: solid; -fx-border-width: 0.5px; -fx-border-radius: 5px;"/>
     </Pane>

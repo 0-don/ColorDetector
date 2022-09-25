@@ -28,5 +28,9 @@ public class ColorDetectorController {
 
     @FXML
     private Pane color;
+
+    public void setX(String text) {
+        x.setText(text);
+    }
 }
 
