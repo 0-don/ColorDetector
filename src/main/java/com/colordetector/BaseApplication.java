@@ -12,6 +12,7 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 import java.io.IOException;
+import java.util.Objects;
 
 public class BaseApplication extends Application {
 
@@ -50,8 +51,8 @@ public class BaseApplication extends Application {
         });
 
         Scene scene = new Scene(root);
-        System.out.println(getClass().getClassLoader().getResource("view.css").toExternalForm());
-        scene.getStylesheets().add(getClass().getClassLoader().getResource("view.css").toExternalForm());
+
+        scene.getStylesheets().add(Objects.requireNonNull(getClass().getClassLoader().getResource("view.css")).toExternalForm());
         stage.setTitle("Color Detector");
         stage.initStyle(StageStyle.UNDECORATED);
         stage.setScene(scene);

@@ -1,5 +1,8 @@
 package com.colordetector.controller;
 
+import com.github.kwhat.jnativehook.GlobalScreen;
+import com.github.kwhat.jnativehook.NativeHookException;
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
@@ -32,6 +35,11 @@ public class ColorDetectorController {
     @FXML
     private Pane color;
 
-
+    @FXML
+    protected void onCloseButtonClick() throws NativeHookException {
+        GlobalScreen.unregisterNativeHook();
+        Platform.exit();
+        System.exit(0);
+    }
 }
 
