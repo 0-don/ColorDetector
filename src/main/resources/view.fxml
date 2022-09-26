@@ -99,5 +99,5 @@
          </font>
       </Text>
     </Pane>
-   <Button fx:id="close" layoutX="395.0" layoutY="-1.0" minHeight="2.0" minWidth="21.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="53.0" style="-fx-background-color: red; -fx-border-radius: 0px; -fx-background-radius: 0px;" text="X" textFill="WHITE" />
+   <Button fx:id="close" layoutX="395.0" layoutY="-1.0" minHeight="2.0" minWidth="21.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="53.0" style="-fx-background-color: red; -fx-border-radius: 0px; -fx-background-radius: 0px;" styleClass="close" stylesheets="@view.css" text="X" textFill="WHITE" />
 </Pane>

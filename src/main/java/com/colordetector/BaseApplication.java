@@ -11,9 +11,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
-import java.io.*;
-
-import static javax.swing.filechooser.FileSystemView.getFileSystemView;
+import java.io.IOException;
 
 public class BaseApplication extends Application {
 
@@ -22,14 +20,14 @@ public class BaseApplication extends Application {
 
     public static void main(String[] args) {
 
-        try {
-            File outputFile = File.createTempFile("debug", ".log", getFileSystemView().getDefaultDirectory());
-            PrintStream output = new PrintStream(new BufferedOutputStream(new FileOutputStream(outputFile)), true);
-            System.setOut(output);
-            System.setErr(output);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            File outputFile = File.createTempFile("debug", ".log", getFileSystemView().getDefaultDirectory());
+//            PrintStream output = new PrintStream(new BufferedOutputStream(new FileOutputStream(outputFile)), true);
+//            System.setOut(output);
+//            System.setErr(output);
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
 
         launch(args);
 
@@ -52,6 +50,8 @@ public class BaseApplication extends Application {
         });
 
         Scene scene = new Scene(root);
+        System.out.println(getClass().getClassLoader().getResource("view.css").toExternalForm());
+        scene.getStylesheets().add(getClass().getClassLoader().getResource("view.css").toExternalForm());
         stage.setTitle("Color Detector");
         stage.initStyle(StageStyle.UNDECORATED);
         stage.setScene(scene);
