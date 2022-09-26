@@ -38,9 +38,9 @@ jobs:
         uses: marvinpinto/action-automatic-releases@latest
         with:
           repo_token: '${{ secrets.GITHUB_TOKEN}}'
-          automatic_release_tag: 'all-build-latest'
+          automatic_release_tag: 'macOS-latest'
           prerelease: true
-          title: 'All Builds'
+          title: 'macOS Development Build'
           files: ./target/*.dmg
   build-unix:
     runs-on: ubuntu-latest
@@ -61,9 +61,9 @@ jobs:
         uses: marvinpinto/action-automatic-releases@latest
         with:
           repo_token: '${{ secrets.GITHUB_TOKEN}}'
-          automatic_release_tag: 'all-build-latest'
+          automatic_release_tag: 'Ubuntu-latest'
           prerelease: true
-          title: 'All Builds'
+          title: 'Ubuntu Development Build'
           files: ./target/*.deb
   build-windows:
     runs-on: windows-latest
@@ -97,7 +97,7 @@ jobs:
         uses: marvinpinto/action-automatic-releases@latest
         with:
           repo_token: '${{ secrets.GITHUB_TOKEN}}'
-          automatic_release_tag: 'all-build-latest'
+          automatic_release_tag: 'Windows-latest'
           prerelease: true
-          title: 'All Builds'
+          title: 'Windows Development Build'
           files: ./target/*.msi
