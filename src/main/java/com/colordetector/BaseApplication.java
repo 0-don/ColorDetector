@@ -9,12 +9,16 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import java.io.*;
 
 import static javax.swing.filechooser.FileSystemView.getFileSystemView;
 
 public class BaseApplication extends Application {
+
+    private double xOffset = 0;
+    private double yOffset = 0;
 
     public static void main(String[] args) {
 
@@ -38,9 +42,18 @@ public class BaseApplication extends Application {
         Parent root = fxmlLoader.load();
         ColorDetectorController controller = fxmlLoader.getController();
 
+        root.setOnMousePressed(event -> {
+            xOffset = event.getSceneX();
+            yOffset = event.getSceneY();
+        });
+        root.setOnMouseDragged(event -> {
+            stage.setX(event.getScreenX() - xOffset);
+            stage.setY(event.getScreenY() - yOffset);
+        });
 
         Scene scene = new Scene(root);
         stage.setTitle("Color Detector");
+        stage.initStyle(StageStyle.UNDECORATED);
         stage.setScene(scene);
         stage.show();
 
