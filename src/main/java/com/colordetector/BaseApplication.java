@@ -54,6 +54,8 @@ public class BaseApplication extends Application {
 
         scene.getStylesheets().add(Objects.requireNonNull(getClass().getClassLoader().getResource("view.css")).toExternalForm());
         stage.setTitle("Color Detector");
+
+        stage.setAlwaysOnTop(true);
         stage.initStyle(StageStyle.UNDECORATED);
         stage.setScene(scene);
         stage.show();
