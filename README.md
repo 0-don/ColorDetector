@@ -1,4 +1,5 @@
 <p align="center">
+  <h1>Color Detector</h1>
   <p align="center">
     <br />
     Color Detector with JavaFX
