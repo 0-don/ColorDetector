@@ -13,7 +13,7 @@ import java.awt.*;
 public class GlobalKeyListener implements NativeKeyListener {
     private final ColorDetectorController controller;
 
-    private boolean isRunning = false;
+    private boolean isRunning = true;
 
     public void nativeKeyPressed(NativeKeyEvent e) {
 

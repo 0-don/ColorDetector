@@ -46,7 +46,9 @@ public class BaseApplication extends Application {
 
 
         GlobalScreen.registerNativeHook();
-        GlobalScreen.addNativeKeyListener(new GlobalKeyListener(controller));
+        GlobalKeyListener globalKeyListener = new GlobalKeyListener(controller);
+        GlobalScreen.addNativeKeyListener(globalKeyListener);
+        globalKeyListener.startDetecting();
     }
 
 
