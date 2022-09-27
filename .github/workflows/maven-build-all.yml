@@ -107,7 +107,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: windows
-          path: ./target/*.deb
+          path: ./target/*.msi
       # - name: Update Automatic Release
       #   uses: marvinpinto/action-automatic-releases@latest
       #   with:
