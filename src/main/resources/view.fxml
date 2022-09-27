@@ -1,140 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
-<Pane xmlns:fx="http://javafx.com/fxml/1" prefHeight="313.0" prefWidth="448.0" style="-fx-background-color: #252526;"
-      xmlns="http://javafx.com/javafx/18" fx:controller="com.colordetector.controller.ColorDetectorController">
-    <Pane layoutX="181.0" layoutY="51.0" prefHeight="104.0" prefWidth="249.0"
-          style="-fx-border-color: #fff; -fx-border-width: 0.5px; -fx-border-radius: 5px;">
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane prefHeight="313.0" prefWidth="448.0" style="-fx-background-color: #252526;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.colordetector.controller.ColorDetectorController">
+    <Pane layoutX="181.0" layoutY="51.0" prefHeight="104.0" prefWidth="249.0" style="-fx-border-color: #fff; -fx-border-width: 0.5px; -fx-border-radius: 5px;">
         <Pane layoutX="75.0" layoutY="-18.0" prefHeight="34.0" prefWidth="102.0" style="-fx-background-color: #252526;">
-            <Text fill="WHITE" layoutY="25.0" style="-fx-control-inner-background: #fff;" text="Color"
-                  textAlignment="CENTER" wrappingWidth="102.0">
+            <Text fill="WHITE" layoutY="25.0" style="-fx-control-inner-background: #fff;" text="Color" textAlignment="CENTER" wrappingWidth="102.0">
                 <font>
-                    <Font size="24.0"/>
+                    <Font size="24.0" />
                 </font>
             </Text>
         </Pane>
-        <Pane id="color" fx:id="color" layoutX="15.0" layoutY="18.0" prefHeight="67.0" prefWidth="62.0"
-              style="-fx-background-color: red; -fx-border-radius: 5px; -fx-border-width: 0.5px; -fx-border-color: white; -fx-background-radius: 5px;"/>
+        <Pane id="color" fx:id="color" layoutX="15.0" layoutY="18.0" prefHeight="67.0" prefWidth="62.0" style="-fx-background-color: red; -fx-border-radius: 5px; -fx-border-width: 0.5px; -fx-border-color: white; -fx-background-radius: 5px;" />
     </Pane>
 
-    <Pane layoutX="15.0" layoutY="51.0" prefHeight="104.0" prefWidth="145.0"
-          style="-fx-border-color: #fff; -fx-border-width: 0.5px; -fx-border-radius: 5px;">
-        <Label alignment="CENTER_RIGHT" layoutX="12.0" layoutY="22.0" prefHeight="26.0" prefWidth="40.0"
-               style="-fx-font-weight: 900;" text="X:" textFill="WHITE">
+    <Pane layoutX="15.0" layoutY="51.0" prefHeight="104.0" prefWidth="145.0" style="-fx-border-color: #fff; -fx-border-width: 0.5px; -fx-border-radius: 5px;">
+        <Label alignment="CENTER_RIGHT" layoutX="12.0" layoutY="22.0" prefHeight="26.0" prefWidth="40.0" style="-fx-font-weight: 900;" text="X:" textFill="WHITE">
             <font>
-                <Font size="14.0"/>
+                <Font size="14.0" />
             </font>
         </Label>
-        <TextField id="x" alignment="CENTER" editable="false" layoutX="54.0" layoutY="22.0" prefHeight="0.0"
-                   prefWidth="53.0"
-                   style="-fx-background-color: #1c1c1c; -fx-text-fill: #ffffff; -fx-border-color: #ffffff; -fx-border-width: 0.5px; -fx-border-radius: 5px;"
-                   fx:id="x"/>
+        <TextField id="x" alignment="CENTER" editable="false" layoutX="54.0" layoutY="22.0" prefHeight="0.0" prefWidth="53.0" style="-fx-background-color: #1c1c1c; -fx-text-fill: #ffffff; -fx-border-color: #ffffff; -fx-border-width: 0.5px; -fx-border-radius: 5px;" fx:id="x" />
         <Pane layoutX="21.0" layoutY="-18.0" prefHeight="34.0" prefWidth="102.0" style="-fx-background-color: #252526;">
-            <Text fill="WHITE" layoutY="26.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0"
-                  style="-fx-control-inner-background: #fff;" text="Location" textAlignment="RIGHT"
-                  wrappingWidth="98.0">
+            <Text fill="WHITE" layoutY="26.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-control-inner-background: #fff;" text="Location" textAlignment="RIGHT" wrappingWidth="98.0">
                 <font>
-                    <Font size="24.0"/>
+                    <Font size="24.0" />
                 </font>
             </Text>
         </Pane>
-        <Label alignment="CENTER_RIGHT" layoutX="12.0" layoutY="55.0" prefHeight="26.0" prefWidth="40.0"
-               style="-fx-font-weight: 900;" text="Y:" textFill="WHITE">
+        <Label alignment="CENTER_RIGHT" layoutX="12.0" layoutY="55.0" prefHeight="26.0" prefWidth="40.0" style="-fx-font-weight: 900;" text="Y:" textFill="WHITE">
             <font>
-                <Font size="14.0"/>
+                <Font size="14.0" />
             </font>
         </Label>
-        <TextField id="y" fx:id="y" alignment="CENTER" editable="false" layoutX="54.0" layoutY="55.0" prefHeight="0.0"
-                   prefWidth="53.0"
-                   style="-fx-background-color: #1c1c1c; -fx-text-fill: #ffffff; -fx-border-color: #ffffff; -fx-border-style: solid; -fx-border-width: 0.5px; -fx-border-radius: 5px;"/>
-        <Label alignment="CENTER_RIGHT" layoutX="256.0" layoutY="22.0" prefHeight="26.0" prefWidth="45.0"
-               style="-fx-font-weight: 900;" text="Name:" textFill="WHITE">
+        <TextField id="y" fx:id="y" alignment="CENTER" editable="false" layoutX="54.0" layoutY="55.0" prefHeight="0.0" prefWidth="53.0" style="-fx-background-color: #1c1c1c; -fx-text-fill: #ffffff; -fx-border-color: #ffffff; -fx-border-style: solid; -fx-border-width: 0.5px; -fx-border-radius: 5px;" />
+        <Label alignment="CENTER_RIGHT" layoutX="256.0" layoutY="22.0" prefHeight="26.0" prefWidth="45.0" style="-fx-font-weight: 900;" text="Name:" textFill="WHITE">
             <font>
-                <Font size="14.0"/>
+                <Font size="14.0" />
             </font>
         </Label>
-        <TextField id="name" fx:id="name" alignment="CENTER" editable="false" layoutX="304.0" layoutY="22.0"
-                   prefHeight="26.0" prefWidth="98.0"
-                   style="-fx-background-color: #1c1c1c; -fx-text-fill: #ffffff; -fx-border-color: #ffffff; -fx-border-style: solid; -fx-border-width: 0.5px; -fx-border-radius: 5px;"/>
-        <Label alignment="CENTER_RIGHT" layoutX="244.0" layoutY="55.0" prefHeight="26.0" prefWidth="53.0"
-               style="-fx-font-weight: 900;" text="Hex:" textFill="WHITE">
+        <TextField id="name" fx:id="name" alignment="CENTER" editable="false" layoutX="304.0" layoutY="22.0" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: #1c1c1c; -fx-text-fill: #ffffff; -fx-border-color: #ffffff; -fx-border-style: solid; -fx-border-width: 0.5px; -fx-border-radius: 5px;" />
+        <Label alignment="CENTER_RIGHT" layoutX="244.0" layoutY="55.0" prefHeight="26.0" prefWidth="53.0" style="-fx-font-weight: 900;" text="Hex:" textFill="WHITE">
             <font>
-                <Font size="14.0"/>
+                <Font size="14.0" />
             </font>
         </Label>
-        <TextField id="hex" fx:id="hex" alignment="CENTER" editable="false" layoutX="304.0" layoutY="55.0"
-                   prefHeight="26.0" prefWidth="98.0"
-                   style="-fx-background-color: #1c1c1c; -fx-text-fill: #ffffff; -fx-border-color: #ffffff; -fx-border-style: solid; -fx-border-width: 0.5px; -fx-border-radius: 5px;"/>
-        <Pane layoutX="-15.0" layoutY="-52.0" prefHeight="32.0" prefWidth="448.0"
-              style="-fx-background-color: #333333;"/>
+        <TextField id="hex" fx:id="hex" alignment="CENTER" editable="false" layoutX="304.0" layoutY="55.0" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: #1c1c1c; -fx-text-fill: #ffffff; -fx-border-color: #ffffff; -fx-border-style: solid; -fx-border-width: 0.5px; -fx-border-radius: 5px;" />
+        <Pane layoutX="-15.0" layoutY="-52.0" prefHeight="32.0" prefWidth="448.0" style="-fx-background-color: #333333;" />
     </Pane>
-    <Pane layoutX="17.0" layoutY="174.0" prefHeight="132.0" prefWidth="145.0"
-          style="-fx-border-color: #fff; -fx-border-width: 0.5px; -fx-border-radius: 5px;">
-        <Label alignment="CENTER_RIGHT" layoutX="9.0" layoutY="22.0" prefHeight="26.0" prefWidth="45.0"
-               style="-fx-font-weight: 900;" text="Red:" textAlignment="RIGHT" textFill="WHITE">
+    <Pane layoutX="17.0" layoutY="174.0" prefHeight="132.0" prefWidth="145.0" style="-fx-border-color: #fff; -fx-border-width: 0.5px; -fx-border-radius: 5px;">
+        <Label alignment="CENTER_RIGHT" layoutX="9.0" layoutY="22.0" prefHeight="26.0" prefWidth="45.0" style="-fx-font-weight: 900;" text="Red:" textAlignment="RIGHT" textFill="WHITE">
             <font>
-                <Font size="14.0"/>
+                <Font size="14.0" />
             </font>
         </Label>
-        <TextField id="red" fx:id="red" alignment="CENTER" editable="false" layoutX="55.0" layoutY="22.0"
-                   prefHeight="0.0" prefWidth="53.0"
-                   style="-fx-background-color: #1c1c1c; -fx-text-fill: #ffffff; -fx-border-color: #ffffff; -fx-border-style: solid; -fx-border-width: 0.5px; -fx-border-radius: 5px;"/>
+        <TextField id="red" fx:id="red" alignment="CENTER" editable="false" layoutX="55.0" layoutY="22.0" prefHeight="0.0" prefWidth="53.0" style="-fx-background-color: #1c1c1c; -fx-text-fill: #ffffff; -fx-border-color: #ffffff; -fx-border-style: solid; -fx-border-width: 0.5px; -fx-border-radius: 5px;" />
         <Pane layoutX="21.0" layoutY="-18.0" prefHeight="34.0" prefWidth="102.0" style="-fx-background-color: #252526;">
-            <Text fill="WHITE" layoutY="26.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0"
-                  style="-fx-control-inner-background: #fff;" text="RGB" textAlignment="CENTER" wrappingWidth="98.0">
+            <Text fill="WHITE" layoutY="26.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-control-inner-background: #fff;" text="RGB" textAlignment="CENTER" wrappingWidth="98.0">
                 <font>
-                    <Font size="24.0"/>
+                    <Font size="24.0" />
                 </font>
             </Text>
         </Pane>
-        <Label layoutX="9.0" layoutY="55.0" prefHeight="26.0" prefWidth="45.0" style="-fx-font-weight: 900;"
-               text="Green:" textAlignment="RIGHT" textFill="WHITE">
+        <Label layoutX="9.0" layoutY="55.0" prefHeight="26.0" prefWidth="45.0" style="-fx-font-weight: 900;" text="Green:" textAlignment="RIGHT" textFill="WHITE">
             <font>
-                <Font size="14.0"/>
+                <Font size="14.0" />
             </font>
         </Label>
-        <TextField id="green" fx:id="green" alignment="CENTER" editable="false" layoutX="55.0" layoutY="55.0"
-                   prefHeight="0.0" prefWidth="53.0"
-                   style="-fx-background-color: #1c1c1c; -fx-text-fill: #ffffff; -fx-border-color: #ffffff; -fx-border-style: solid; -fx-border-width: 0.5px; -fx-border-radius: 5px;"/>
-        <Label alignment="CENTER_RIGHT" layoutX="9.0" layoutY="88.0" prefHeight="26.0" prefWidth="45.0"
-               style="-fx-font-weight: 900;" text="Blue:" textAlignment="RIGHT" textFill="WHITE">
+        <TextField id="green" fx:id="green" alignment="CENTER" editable="false" layoutX="55.0" layoutY="55.0" prefHeight="0.0" prefWidth="53.0" style="-fx-background-color: #1c1c1c; -fx-text-fill: #ffffff; -fx-border-color: #ffffff; -fx-border-style: solid; -fx-border-width: 0.5px; -fx-border-radius: 5px;" />
+        <Label alignment="CENTER_RIGHT" layoutX="9.0" layoutY="88.0" prefHeight="26.0" prefWidth="45.0" style="-fx-font-weight: 900;" text="Blue:" textAlignment="RIGHT" textFill="WHITE">
             <font>
-                <Font size="14.0"/>
+                <Font size="14.0" />
             </font>
         </Label>
-        <TextField id="blue" fx:id="blue" alignment="CENTER" editable="false" layoutX="55.0" layoutY="88.0"
-                   prefHeight="0.0" prefWidth="53.0"
-                   style="-fx-background-color: #1c1c1c; -fx-text-fill: #ffffff; -fx-border-color: #ffffff; -fx-border-style: solid; -fx-border-width: 0.5px; -fx-border-radius: 5px;"/>
+        <TextField id="blue" fx:id="blue" alignment="CENTER" editable="false" layoutX="55.0" layoutY="88.0" prefHeight="0.0" prefWidth="53.0" style="-fx-background-color: #1c1c1c; -fx-text-fill: #ffffff; -fx-border-color: #ffffff; -fx-border-style: solid; -fx-border-width: 0.5px; -fx-border-radius: 5px;" />
     </Pane>
-    <Pane layoutX="181.0" layoutY="174.0" prefHeight="132.0" prefWidth="249.0"
-          style="-fx-border-color: #fff; -fx-border-width: 0.5px; -fx-border-radius: 5px;">
+    <Pane layoutX="181.0" layoutY="174.0" prefHeight="132.0" prefWidth="249.0" style="-fx-border-color: #fff; -fx-border-width: 0.5px; -fx-border-radius: 5px;">
         <Pane layoutX="78.0" layoutY="-18.0" prefHeight="34.0" prefWidth="102.0" style="-fx-background-color: #252526;">
-            <Text fill="WHITE" layoutY="26.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0"
-                  style="-fx-control-inner-background: #fff;" text="Tips" textAlignment="CENTER" wrappingWidth="98.0">
+            <Text fill="WHITE" layoutY="26.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-control-inner-background: #fff;" text="Tips" textAlignment="CENTER" wrappingWidth="98.0">
                 <font>
-                    <Font size="24.0"/>
+                    <Font size="24.0" />
                 </font>
             </Text>
         </Pane>
-        <Text fill="WHITE" layoutX="22.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0"
-              text="Press ESC to freeze / unfreeze current color stats" textAlignment="CENTER"
-              wrappingWidth="209.44920349121094">
+        <Text fill="WHITE" layoutX="22.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Press ESC to freeze / unfreeze current color stats" textAlignment="CENTER" wrappingWidth="209.44920349121094">
             <font>
-                <Font name="System Bold" size="12.0"/>
+                <Font name="System Bold" size="12.0" />
             </font>
         </Text>
-        <Text fill="WHITE" layoutX="6.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0"
-              text="Press F1 to copy the current hex color value to the clipboard, OR press F2 to copy the current RGB color values instead"
-              textAlignment="CENTER" wrappingWidth="241.44920349121094">
+        <Text fill="WHITE" layoutX="6.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Press F1 to copy the current hex color value to the clipboard, OR press F2 to copy the current RGB color values instead" textAlignment="CENTER" wrappingWidth="241.44920349121094">
             <font>
-                <Font size="11.0"/>
+                <Font size="11.0" />
             </font>
         </Text>
     </Pane>
-    <Button onAction="#onCloseButtonClick" layoutX="395.0" layoutY="-1.0" minHeight="2.0" minWidth="21.0"
-            mnemonicParsing="false" prefHeight="30.0" prefWidth="53.0"
-            style="-fx-background-color: red; -fx-border-radius: 0px; -fx-background-radius: 0px;" styleClass="close"
-            stylesheets="@view.css" text="X" textFill="WHITE"/>
+    <Button layoutX="395.0" minHeight="2.0" minWidth="21.0" mnemonicParsing="false" onAction="#onCloseButtonClick" prefHeight="30.0" prefWidth="53.0" style="-fx-background-color: red; -fx-border-radius: 0px; -fx-background-radius: 0px;" styleClass="close" stylesheets="@view.css" text="X" textFill="WHITE" />
 </Pane>
