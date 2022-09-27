@@ -11,12 +11,6 @@ on:
   workflow_dispatch:
     branches: [main]
 
-# Note that the builds produced by this build WILL NOT RUN on macOS Monterey!
-# They will be flagged as unsigned and quarantined. You can run a command-line
-# to un-quarantine them, but obviously that's not practical for end-users.
-# Instead, you will need to set up the signing and notarization to get this to work
-# seamlessly for users. See the notes on signing linked to in the README.md
-# in the root of this directory.
 
 jobs:
   build-mac:
@@ -39,14 +33,6 @@ jobs:
         with:
           name: macos
           path: ./target/*.dmg
-      # - name: Update Automatic Release
-      #   uses: marvinpinto/action-automatic-releases@latest
-      #   with:
-      #     repo_token: '${{ secrets.GITHUB_TOKEN}}'
-      #     automatic_release_tag: 'macOS-latest'
-      #     prerelease: true
-      #     title: 'macOS Development Build'
-      #     files: ./target/*.dmg
   build-unix:
     runs-on: ubuntu-latest
 
@@ -67,14 +53,6 @@ jobs:
         with:
           name: unix
           path: ./target/*.deb
-      # - name: Update Automatic Release
-      #   uses: marvinpinto/action-automatic-releases@latest
-      #   with:
-      #     repo_token: '${{ secrets.GITHUB_TOKEN}}'
-      #     automatic_release_tag: 'Ubuntu-latest'
-      #     prerelease: true
-      #     title: 'Ubuntu Development Build'
-      #     files: ./target/*.deb
   build-windows:
     runs-on: windows-latest
     steps:
@@ -108,14 +86,6 @@ jobs:
         with:
           name: windows
           path: ./target/*.msi
-      # - name: Update Automatic Release
-      #   uses: marvinpinto/action-automatic-releases@latest
-      #   with:
-      #     repo_token: '${{ secrets.GITHUB_TOKEN}}'
-      #     automatic_release_tag: 'Windows-latest'
-      #     prerelease: true
-      #     title: 'Windows Development Build'
-      #     files: ./target/*.msi
   publish:
     runs-on: ubuntu-latest
     needs: [build-mac, build-unix, build-windows]
