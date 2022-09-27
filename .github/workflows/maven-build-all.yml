@@ -131,7 +131,7 @@ jobs:
           name: unix
           path: ./build
       - name: Download Windows
-      - uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v3
         with:
           name: windows
           path: ./build
