@@ -267,7 +267,8 @@
             </activation>
             <properties>
                 <!--suppress UnresolvedMavenProperty -->
-                <app.version>1.${env.GITHUB_RUN_NUMBER}.${env.GITHUB_RUN_ATTEMPT}</app.version>
+                <!-- <app.version>1.${env.GITHUB_RUN_NUMBER}.${env.GITHUB_RUN_ATTEMPT}</app.version> -->
+                <app.version>1.0.0</app.version>
             </properties>
         </profile>
 
