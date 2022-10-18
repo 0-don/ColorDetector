@@ -1,6 +1,9 @@
 <p align="center">
     <h1 align="center">Color Detector</h1>
     <p align="center">
+    <img src="app-icon.png" alt="icon" width="100" >
+    </p>
+    <p align="center">
         Color Detector with JavaFX
     </p>
     <p  align="center">
@@ -12,6 +15,6 @@
         <br />
     </p>
     <p align="center">
-    <img src="app.png" alt="Logo" >
+    <img src="app.png" alt="App" >
     </p>
 </p>
