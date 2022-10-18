@@ -23,7 +23,7 @@
          https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/text/SimpleDateFormat.html
          -->
 
-        <app.version>1.0.0</app.version>
+        <app.version>1.0.1</app.version>
         <app.dir>${user.home}\AppData\Roaming\${app.name}</app.dir>
 
         <!-- This property is used to specify the modules included in the (custom) JVM image. -->
