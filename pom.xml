@@ -6,7 +6,7 @@
 
     <groupId>com.colordetector</groupId>
     <artifactId>color-detector</artifactId>
-    <version>1.0</version>
+    <version>1.0.1</version>
 
     <!-- This description text is included in the Windows installer by default, see windows-jpackage.txt -->
     <description>Color Detector</description>

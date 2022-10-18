@@ -8,6 +8,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
@@ -60,6 +61,7 @@ public class BaseApplication extends Application {
         stage.setScene(scene);
         stage.show();
 
+        stage.getIcons().add(new Image("file:app-icon.png"));
 
         GlobalScreen.registerNativeHook();
         GlobalKeyListener globalKeyListener = new GlobalKeyListener(controller);
