@@ -61,7 +61,7 @@ public class BaseApplication extends Application {
         stage.setScene(scene);
         stage.show();
 
-        stage.getIcons().add(new Image("file:app-icon.png"));
+        stage.getIcons().add(new Image(Objects.requireNonNull(getClass().getClassLoader().getResource("app-icon.png")).toExternalForm()));
 
         GlobalScreen.registerNativeHook();
         GlobalKeyListener globalKeyListener = new GlobalKeyListener(controller);
